@@ -131,11 +131,11 @@ class _VideoComponentState extends State<VideoComponent> with SingleTickerProvid
               child: buildOverlayGradient(),
             ),
           widget.showButtonPlay
-              ? Positioned(
+              ? Center(child: Positioned(
                   bottom: 8,
                   left: 8,
                   child: buildPlayPauseIcon(),
-                )
+                ))
               : const SizedBox(),
         ],
       ),
